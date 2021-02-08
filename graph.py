@@ -63,7 +63,7 @@ class Digraph(object):
     for src in self.edges:
       for dest in self.edges[src]:
         result = result + src.getName() + '->' + dest.getName() + '\n'
-    return result[-1]
+    return result[:-1]
 
 class Graph(Digraph):
   def addEdge(self,edge):
